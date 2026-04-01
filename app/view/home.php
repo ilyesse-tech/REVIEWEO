@@ -49,7 +49,7 @@
 
             <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
                 <a href="#critiques" class="btn btn-light btn-lg px-4">Voir les critiques</a>
-                <a href="register.php" class="btn btn-outline-light btn-lg px-4">Publier une critique</a>
+                <a href="book_detail.php" class="btn btn-outline-light btn-lg px-4">Publier une critique</a>
             </div>
         </div>
     </header>
@@ -91,12 +91,12 @@
         </div>
     </section>
 
-    <!-- Dernières critiques -->
+    <!-- Livres mis en avant -->
     <section id="critiques" class="py-5 bg-white">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Dernières critiques</h2>
-                <p class="text-muted">Une sélection de critiques de livres mises en avant</p>
+                <h2 class="fw-bold">Livres mis en avant</h2>
+                <p class="text-muted">Découvrez quelques livres populaires et leurs avis</p>
             </div>
 
             <div class="row g-4">
@@ -185,7 +185,7 @@
 
                 <div class="col-md-4">
                     <div class="feature-card text-center shadow-sm h-100">
-                        <div class="feature-icon">👍</div>
+                        <div class="feature-icon">😊</div>
                         <h4 class="fw-bold">Interagir</h4>
                         <p class="text-muted mb-0">
                             Les utilisateurs peuvent consulter les avis et réagir aux critiques publiées.
@@ -195,7 +195,7 @@
 
                 <div class="col-md-4">
                     <div class="feature-card text-center shadow-sm h-100">
-                        <div class="feature-icon">🔒</div>
+                        <div class="feature-icon">🛡️</div>
                         <h4 class="fw-bold">Modérer</h4>
                         <p class="text-muted mb-0">
                             Les administrateurs gèrent les utilisateurs et modèrent les contenus.

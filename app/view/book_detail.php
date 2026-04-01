@@ -44,7 +44,7 @@
             <h1 class="fw-bold text-white mb-3">L'Étranger</h1>
             <p class="text-white-50 mb-2 fs-5">Albert Camus</p>
             <p class="text-white mb-0">
-                Résumé, critique et avis des lecteurs.
+                Résumé du livre, formulaire de critique et avis des lecteurs.
             </p>
         </div>
     </section>
@@ -52,31 +52,29 @@
     <!-- Contenu -->
     <section class="py-5 bg-light">
         <div class="container">
-            <div class="row g-4">
-
-                <!-- Colonne principale -->
-                <div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-12">
 
                     <!-- Résumé -->
                     <div class="detail-card shadow-sm mb-4">
                         <h2 class="fw-bold mb-3">Résumé du livre</h2>
                         <p>
-                            <strong>L'Étranger</strong> raconte l’histoire de Meursault, un homme détaché du monde
-                            qui l’entoure. Après la mort de sa mère, il semble réagir avec une grande indifférence,
-                            ce qui choque son entourage.
+                            <strong>L'Étranger</strong> raconte l’histoire de Meursault, un homme qui semble
+                            vivre avec une grande distance émotionnelle. Après la mort de sa mère, il reprend
+                            sa vie sans manifester les réactions attendues par la société.
                         </p>
                         <p>
-                            Sa vie bascule lorsqu’il se retrouve impliqué dans un événement dramatique
-                            qui le conduit devant la justice. Mais plus que son acte, c’est sa personnalité,
-                            son comportement et son rapport aux émotions qui sont jugés.
+                            Sa vie bascule lorsqu’un enchaînement d’événements le conduit à commettre un acte
+                            dramatique. Le roman suit alors son parcours face à la justice, mais surtout face
+                            au regard des autres.
                         </p>
                         <p class="mb-0">
                             À travers cette œuvre, Albert Camus développe une réflexion sur l’absurde,
-                            le regard de la société et le sens de l’existence.
+                            le jugement social et la place de l’individu dans un monde où tout ne fait pas sens.
                         </p>
                     </div>
 
-                    <!-- Formulaire critique -->
+                    <!-- Formulaire -->
                     <div class="detail-card shadow-sm mb-4">
                         <h2 class="fw-bold mb-3">Publier une critique</h2>
 
@@ -116,7 +114,13 @@
                                 <h5 class="mb-0">Sonia</h5>
                                 <span class="badge bg-success">5/5</span>
                             </div>
-                            <p class="mb-0">Très beau livre, simple à lire mais très profond.</p>
+                            <p class="mb-3">Très beau livre, simple à lire mais vraiment profond.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>12</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>3</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>7</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
+                            </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -124,7 +128,13 @@
                                 <h5 class="mb-0">Karim</h5>
                                 <span class="badge bg-warning text-dark">4/5</span>
                             </div>
-                            <p class="mb-0">Le style est particulier, mais le message est fort.</p>
+                            <p class="mb-3">Le style est particulier, mais le message est fort.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>7</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>4</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
+                            </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -132,7 +142,13 @@
                                 <h5 class="mb-0">Amina</h5>
                                 <span class="badge bg-primary">5/5</span>
                             </div>
-                            <p class="mb-0">Une œuvre marquante qui fait réfléchir.</p>
+                            <p class="mb-3">Une œuvre marquante qui fait réfléchir.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>15</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>2</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>9</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>3</span></button>
+                            </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -140,7 +156,13 @@
                                 <h5 class="mb-0">Lucas</h5>
                                 <span class="badge bg-danger">3/5</span>
                             </div>
-                            <p class="mb-0">Intéressant, mais j’ai eu du mal avec le personnage principal.</p>
+                            <p class="mb-3">Intéressant, mais j’ai eu du mal avec le personnage principal.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>4</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>2</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>5</span></button>
+                            </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -148,7 +170,13 @@
                                 <h5 class="mb-0">Nadia</h5>
                                 <span class="badge bg-success">4/5</span>
                             </div>
-                            <p class="mb-0">Lecture courte, efficace et très bien écrite.</p>
+                            <p class="mb-3">Lecture courte, efficace et très bien écrite.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>9</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>5</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
+                            </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -156,7 +184,13 @@
                                 <h5 class="mb-0">Yassine</h5>
                                 <span class="badge bg-primary">5/5</span>
                             </div>
-                            <p class="mb-0">Un classique à lire absolument.</p>
+                            <p class="mb-3">Un classique à lire absolument.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>11</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>2</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>8</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>3</span></button>
+                            </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -164,7 +198,13 @@
                                 <h5 class="mb-0">Mélissa</h5>
                                 <span class="badge bg-warning text-dark">4/5</span>
                             </div>
-                            <p class="mb-0">J’ai aimé la réflexion philosophique derrière l’histoire.</p>
+                            <p class="mb-3">J’ai aimé la réflexion philosophique derrière l’histoire.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>6</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>4</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
+                            </div>
                         </div>
 
                         <div class="comment-item">
@@ -172,37 +212,23 @@
                                 <h5 class="mb-0">Imane</h5>
                                 <span class="badge bg-success">5/5</span>
                             </div>
-                            <p class="mb-0">Très belle découverte, lecture rapide mais impactante.</p>
+                            <p class="mb-3">Très belle découverte, lecture rapide mais impactante.</p>
+                            <div class="reaction-group d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>13</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>2</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>10</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>3</span></button>
+                            </div>
                         </div>
 
-                        <!-- Pagination -->
                         <div class="d-flex justify-content-center gap-2 mt-4 flex-wrap" id="pagination"></div>
                     </div>
+
                 </div>
-
-                <!-- Colonne droite -->
-                <div class="col-lg-4">
-                    <div class="detail-card shadow-sm mb-4">
-                        <h4 class="fw-bold mb-3">Informations</h4>
-                        <p><strong>Titre :</strong> L'Étranger</p>
-                        <p><strong>Auteur :</strong> Albert Camus</p>
-                        <p><strong>Catégorie :</strong> Roman</p>
-                        <p><strong>Note moyenne :</strong> 4.4 / 5</p>
-                        <p class="mb-0"><strong>Nombre de commentaires :</strong> 8</p>
-                    </div>
-
-                    <div class="detail-card shadow-sm">
-                        <h4 class="fw-bold mb-3">Actions</h4>
-                        <a href="index.php" class="btn btn-dark w-100 mb-3">Retour à l'accueil</a>
-                        <button class="btn btn-outline-dark w-100">👍 Liker ce livre</button>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer-section text-white py-4">
         <div class="container text-center">
             <h5 class="fw-bold mb-2">REVIEWEO</h5>
@@ -251,6 +277,19 @@
         }
 
         showPage(currentPage);
+
+        const reactionButtons = document.querySelectorAll('.reaction-btn');
+
+        reactionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const span = button.querySelector('span');
+                let count = parseInt(span.textContent);
+                span.textContent = count + 1;
+
+                button.classList.remove('btn-outline-secondary');
+                button.classList.add('btn-secondary');
+            });
+        });
     </script>
 </body>
 </html>
