@@ -117,10 +117,7 @@
                             <p class="mb-3">Très beau livre, simple à lire mais vraiment profond.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>12</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>3</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>7</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
-                            </div>
+                                 </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -131,9 +128,7 @@
                             <p class="mb-3">Le style est particulier, mais le message est fort.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>7</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>4</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
+                            
                             </div>
                         </div>
 
@@ -145,10 +140,7 @@
                             <p class="mb-3">Une œuvre marquante qui fait réfléchir.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>15</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>2</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>9</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>3</span></button>
-                            </div>
+                             </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
@@ -159,9 +151,6 @@
                             <p class="mb-3">Intéressant, mais j’ai eu du mal avec le personnage principal.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>4</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>2</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>5</span></button>
                             </div>
                         </div>
 
@@ -173,9 +162,6 @@
                             <p class="mb-3">Lecture courte, efficace et très bien écrite.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>9</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>5</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
                             </div>
                         </div>
 
@@ -187,9 +173,6 @@
                             <p class="mb-3">Un classique à lire absolument.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>11</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>2</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>8</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>3</span></button>
                             </div>
                         </div>
 
@@ -201,9 +184,6 @@
                             <p class="mb-3">J’ai aimé la réflexion philosophique derrière l’histoire.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>6</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>1</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>4</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>2</span></button>
                             </div>
                         </div>
 
@@ -215,9 +195,7 @@
                             <p class="mb-3">Très belle découverte, lecture rapide mais impactante.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
                                 <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>13</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😂 <span>2</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😍 <span>10</span></button>
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">😮 <span>3</span></button>
+
                             </div>
                         </div>
 
