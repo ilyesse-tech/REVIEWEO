@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-class  usersModels{
+class  UsersModel{
     private $connection;
 
     public function __construct($db_connection){
@@ -10,16 +10,15 @@ class  usersModels{
     }
 
     //cette focntion renvoie true car execute() renvoie true ou false si sa reussti ou non
-    public function register(string $pseudo, string $email, string $password,int $role):bool{
-        $requestSQL= "INSERT INTO user(pseudo, email, password, role)
-        VALUES (:pseudo, :email, :password, :role )
+    public function register(string $pseudo, string $email, string $password,):bool{
+        $requestSQL= "INSERT INTO user(pseudo, email, password )
+        VALUES (:pseudo, :email, :password )
         ";
         $statement=$this->connection->prepare($requestSQL);
         return $statement->execute([  //la fonction register retournera donc true ou false au controller  
             ':pseudo' => $pseudo,
             ':email' => $email,
             ':password' => $password,
-            ':role' => $role
         ]);
     }
 
