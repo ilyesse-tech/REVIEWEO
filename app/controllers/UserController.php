@@ -39,7 +39,27 @@
                     echo "Une erreur c'est produite réessayer";
                 }
             }
-
         }
-   }
+
+
+        public function login(){
+            if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+            }
+
+            // on demande a la base de donnée de recup tout lutilisateur grace a son mail
+            $user = $this->userModel->findByEmail($email);
+            
+            // si l'utilisateur n'existe pas dans la base de donnée ou son password est faux alors on fait sa
+            if(!$user || !password_verify($password, $user['password'] )){
+                echo "Mail ou mot de passe incorrecte ";
+                return;
+            }
+            
+            session_start();
+            $_SESSION['user']= $user;
+            echo "Vous êtes connecter !";
+        }
+    }
 ?>
