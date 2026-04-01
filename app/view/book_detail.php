@@ -10,10 +10,11 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.php">📚 REVIEWEO</a>
+            <a class="navbar-brand fw-bold" href="index.php">REVIEWEO</a>
 
+            <!-- Bouton hamburger pour mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRevieweo">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,30 +85,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!-- Colonne latérale -->
-                <div class="col-lg-4">
-                    <div class="detail-card shadow-sm mb-4">
-                        <h4 class="fw-bold mb-3">Informations</h4>
-                        <p><strong>Titre :</strong> L'Étranger</p>
-                        <p><strong>Auteur :</strong> Albert Camus</p>
-                        <p><strong>Catégorie :</strong> Roman</p>
-                        <p><strong>Note :</strong> 9/10</p>
-                        <p class="mb-0"><strong>Publié par :</strong> Admin</p>
-                    </div>
-
-                    <div class="detail-card shadow-sm">
-                        <h4 class="fw-bold mb-3">Actions</h4>
-                        <a class="navbar-brand fw-bold" href="index.php">📚 REVIEWEO</a>
-                        <a class="nav-link" href="index.php">Accueil</a>
-                        <a class="nav-link active" href="book_detail.php">Critiques</a>
-                        <a class="nav-link" href="login.php">Connexion</a>
-                        <a class="btn btn-warning fw-semibold px-4" href="register.php">Inscription</a>
-                        <a href="index.php" class="btn btn-dark w-100 mb-3">Retour à l'accueil</a>
-                        <a href="#" class="btn btn-outline-dark w-100">Liker cette critique</a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
