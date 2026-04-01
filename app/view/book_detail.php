@@ -12,9 +12,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.php">REVIEWEO</a>
+            <a class="navbar-brand fw-bold" href="index.php">📚 REVIEWEO</a>
 
-            <!-- Bouton hamburger pour mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRevieweo">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,66 +24,180 @@
                         <a class="nav-link" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Critiques</a>
+                        <a class="nav-link active" href="book_detail.php">Critiques</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Connexion</a>
+                        <a class="nav-link" href="login.php">Connexion</a>
                     </li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn btn-warning fw-semibold px-4" href="#">Inscription</a>
+                        <a class="btn btn-warning fw-semibold px-4" href="register.php">Inscription</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header détail -->
+    <!-- Header -->
     <section class="detail-hero py-5">
         <div class="container">
             <span class="badge bg-primary mb-3">Roman</span>
             <h1 class="fw-bold text-white mb-3">L'Étranger</h1>
             <p class="text-white-50 mb-2 fs-5">Albert Camus</p>
             <p class="text-white mb-0">
-                Une critique littéraire complète sur une œuvre majeure de la littérature française.
+                Résumé, critique et avis des lecteurs.
             </p>
         </div>
     </section>
 
-    <!-- Contenu principal -->
+    <!-- Contenu -->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row g-4">
-                
+
                 <!-- Colonne principale -->
                 <div class="col-lg-8">
-                    <div class="detail-card shadow-sm">
-                        <h2 class="fw-bold mb-4">Critique du livre</h2>
 
+                    <!-- Résumé -->
+                    <div class="detail-card shadow-sm mb-4">
+                        <h2 class="fw-bold mb-3">Résumé du livre</h2>
                         <p>
-                            <strong>L’Étranger</strong> d’Albert Camus est une œuvre emblématique qui interroge
-                            profondément la condition humaine, l’absurde et le rapport de l’individu à la société.
-                            À travers le personnage de Meursault, l’auteur propose une réflexion puissante sur
-                            l’indifférence, le jugement social et le sens de l’existence.
+                            <strong>L'Étranger</strong> raconte l’histoire de Meursault, un homme détaché du monde
+                            qui l’entoure. Après la mort de sa mère, il semble réagir avec une grande indifférence,
+                            ce qui choque son entourage.
                         </p>
-
                         <p>
-                            Le style de Camus est simple, direct et efficace. Cette sobriété donne encore plus
-                            de force aux émotions et aux événements racontés. Le lecteur est plongé dans un récit
-                            à la fois froid et intense, qui pousse à réfléchir bien au-delà de l’histoire elle-même.
+                            Sa vie bascule lorsqu’il se retrouve impliqué dans un événement dramatique
+                            qui le conduit devant la justice. Mais plus que son acte, c’est sa personnalité,
+                            son comportement et son rapport aux émotions qui sont jugés.
                         </p>
-
-                        <p>
-                            Ce livre reste aujourd’hui une référence incontournable pour comprendre la philosophie
-                            de l’absurde et l’importance de la littérature engagée dans la réflexion humaine.
-                            Sa lecture est accessible, mais son interprétation est riche et profonde.
-                        </p>
-
                         <p class="mb-0">
-                            En résumé, <strong>L’Étranger</strong> est un roman court mais marquant, qui laisse
-                            une impression durable et invite à une lecture critique du monde et des normes sociales.
+                            À travers cette œuvre, Albert Camus développe une réflexion sur l’absurde,
+                            le regard de la société et le sens de l’existence.
                         </p>
                     </div>
+
+                    <!-- Formulaire critique -->
+                    <div class="detail-card shadow-sm mb-4">
+                        <h2 class="fw-bold mb-3">Publier une critique</h2>
+
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="titre" class="form-label">Titre</label>
+                                <input type="text" class="form-control" id="titre" name="titre" placeholder="Titre de votre critique">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contenu" class="form-label">Contenu</label>
+                                <textarea class="form-control" id="contenu" name="contenu" rows="5" placeholder="Écrivez votre critique ici..."></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="note" class="form-label">Note</label>
+                                <select class="form-select" id="note" name="note">
+                                    <option value="">Choisir une note</option>
+                                    <option value="1">1 / 5</option>
+                                    <option value="2">2 / 5</option>
+                                    <option value="3">3 / 5</option>
+                                    <option value="4">4 / 5</option>
+                                    <option value="5">5 / 5</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark">Publier ma critique</button>
+                        </form>
+                    </div>
+
+                    <!-- Commentaires -->
+                    <div class="detail-card shadow-sm">
+                        <h2 class="fw-bold mb-4">Commentaires des utilisateurs</h2>
+
+                        <div class="comment-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Sonia</h5>
+                                <span class="badge bg-success">5/5</span>
+                            </div>
+                            <p class="mb-0">Très beau livre, simple à lire mais très profond.</p>
+                        </div>
+
+                        <div class="comment-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Karim</h5>
+                                <span class="badge bg-warning text-dark">4/5</span>
+                            </div>
+                            <p class="mb-0">Le style est particulier, mais le message est fort.</p>
+                        </div>
+
+                        <div class="comment-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Amina</h5>
+                                <span class="badge bg-primary">5/5</span>
+                            </div>
+                            <p class="mb-0">Une œuvre marquante qui fait réfléchir.</p>
+                        </div>
+
+                        <div class="comment-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Lucas</h5>
+                                <span class="badge bg-danger">3/5</span>
+                            </div>
+                            <p class="mb-0">Intéressant, mais j’ai eu du mal avec le personnage principal.</p>
+                        </div>
+
+                        <div class="comment-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Nadia</h5>
+                                <span class="badge bg-success">4/5</span>
+                            </div>
+                            <p class="mb-0">Lecture courte, efficace et très bien écrite.</p>
+                        </div>
+
+                        <div class="comment-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Yassine</h5>
+                                <span class="badge bg-primary">5/5</span>
+                            </div>
+                            <p class="mb-0">Un classique à lire absolument.</p>
+                        </div>
+
+                        <div class="comment-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Mélissa</h5>
+                                <span class="badge bg-warning text-dark">4/5</span>
+                            </div>
+                            <p class="mb-0">J’ai aimé la réflexion philosophique derrière l’histoire.</p>
+                        </div>
+
+                        <div class="comment-item">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Imane</h5>
+                                <span class="badge bg-success">5/5</span>
+                            </div>
+                            <p class="mb-0">Très belle découverte, lecture rapide mais impactante.</p>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="d-flex justify-content-center gap-2 mt-4 flex-wrap" id="pagination"></div>
+                    </div>
                 </div>
+
+                <!-- Colonne droite -->
+                <div class="col-lg-4">
+                    <div class="detail-card shadow-sm mb-4">
+                        <h4 class="fw-bold mb-3">Informations</h4>
+                        <p><strong>Titre :</strong> L'Étranger</p>
+                        <p><strong>Auteur :</strong> Albert Camus</p>
+                        <p><strong>Catégorie :</strong> Roman</p>
+                        <p><strong>Note moyenne :</strong> 4.4 / 5</p>
+                        <p class="mb-0"><strong>Nombre de commentaires :</strong> 8</p>
+                    </div>
+
+                    <div class="detail-card shadow-sm">
+                        <h4 class="fw-bold mb-3">Actions</h4>
+                        <a href="index.php" class="btn btn-dark w-100 mb-3">Retour à l'accueil</a>
+                        <button class="btn btn-outline-dark w-100">👍 Liker ce livre</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -99,5 +212,45 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const commentsPerPage = 5;
+        const comments = document.querySelectorAll('.comment-item');
+        const pagination = document.getElementById('pagination');
+        const totalPages = Math.ceil(comments.length / commentsPerPage);
+        let currentPage = 1;
+
+        function showPage(page) {
+            const start = (page - 1) * commentsPerPage;
+            const end = start + commentsPerPage;
+
+            comments.forEach((comment, index) => {
+                comment.style.display = (index >= start && index < end) ? 'block' : 'none';
+            });
+
+            renderPagination(page);
+        }
+
+        function renderPagination(activePage) {
+            pagination.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.className = i === activePage
+                    ? 'btn btn-dark btn-sm'
+                    : 'btn btn-outline-dark btn-sm';
+
+                button.addEventListener('click', () => {
+                    currentPage = i;
+                    showPage(currentPage);
+                });
+
+                pagination.appendChild(button);
+            }
+        }
+
+        showPage(currentPage);
+    </script>
 </body>
 </html>

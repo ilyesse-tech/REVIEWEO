@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">📚 REVIEWEO</a>
+            <a class="navbar-brand fw-bold" href="index.php">📚 REVIEWEO</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRevieweo">
                 <span class="navbar-toggler-icon"></span>
@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarRevieweo">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Accueil</a>
+                        <a class="nav-link active" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Critiques</a>
+                        <a class="nav-link" href="book_detail.php">Critiques</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.php">Connexion</a>
@@ -49,7 +49,7 @@
 
             <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
                 <a href="#critiques" class="btn btn-light btn-lg px-4">Voir les critiques</a>
-                <a href="#" class="btn btn-outline-light btn-lg px-4">Publier une critique</a>
+                <a href="register.php" class="btn btn-outline-light btn-lg px-4">Publier une critique</a>
             </div>
         </div>
     </header>
@@ -133,7 +133,7 @@
                         </div>
                         <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
                             <span class="fw-semibold">Note : 8/10</span>
-                            <a href="#" class="btn btn-sm btn-dark">Lire plus</a>
+                            <a href="book_detail.php" class="btn btn-sm btn-dark">Lire plus</a>
                         </div>
                     </div>
                 </div>
@@ -152,14 +152,14 @@
                         </div>
                         <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
                             <span class="fw-semibold">Note : 10/10</span>
-                            <a href="#" class="btn btn-sm btn-dark">Lire plus</a>
+                            <a href="book_detail.php" class="btn btn-sm btn-dark">Lire plus</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-5">
-                <a href="#" class="btn btn-outline-dark btn-lg px-4">Voir toutes les critiques</a>
+                <a href="book_detail.php" class="btn btn-outline-dark btn-lg px-4">Voir toutes les critiques</a>
             </div>
         </div>
     </section>

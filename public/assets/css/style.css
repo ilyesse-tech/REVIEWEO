@@ -123,3 +123,25 @@ body {
         text-align: center;
     }
 }
+
+.detail-hero {
+    background: linear-gradient(rgba(17, 24, 39, 0.80), rgba(17, 24, 39, 0.80)),
+                url("https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.detail-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.comment-item h5 {
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    resize: none;
+}

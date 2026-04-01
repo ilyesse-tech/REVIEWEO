@@ -23,13 +23,13 @@
                         <a class="nav-link" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Critiques</a>
+                        <a class="nav-link" href="book_detail.php">Critiques</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.php">Connexion</a>
                     </li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn btn-warning fw-semibold px-4" href="#">Inscription</a>
+                        <a class="btn btn-warning fw-semibold px-4" href="register.php">Inscription</a>
                     </li>
                 </ul>
             </div>
@@ -83,10 +83,6 @@
 
                         <p class="text-center mb-0">
                             Vous avez déjà un compte ?
-                            <a class="nav-link" href="index.php">Accueil</a>
-                            <a class="nav-link" href="book_detail.php">Critiques</a>
-                            <a class="nav-link" href="login.php">Connexion</a>
-                            <a class="btn btn-warning fw-semibold px-4" href="register.php">Inscription</a>
                             <a href="login.php" class="fw-semibold text-decoration-none">Connectez-vous</a>
                         </p>
                     </div>
