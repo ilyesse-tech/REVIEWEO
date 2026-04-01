@@ -10,7 +10,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.php">REVIEWEO</a>
 
