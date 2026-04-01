@@ -1,13 +1,13 @@
 <?php
 
     namespace app\controllers;
-    use app\models\UsersModel;
+    use app\models\UserModel;
 
    class UserController{
         private $userModel;
-
+        // la connexion sera passer dans le index.php a controller cest labas quon aura  require_once la Db.php
         public function __construct($connection){
-            $this->userModel = new UsersModel($connection);
+            $this->userModel = new UserModel($connection);
         }
 
 

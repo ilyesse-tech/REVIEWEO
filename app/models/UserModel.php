@@ -2,7 +2,8 @@
 
 namespace app\models;
 
-class  UsersModel{
+class  userModel{
+    //on donne accès a la base de donnée 
     private $connection;
 
     public function __construct($db_connection){
