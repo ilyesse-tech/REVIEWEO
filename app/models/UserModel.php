@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-class  userModel{
+class  UserModel{
     //on donne accès a la base de donnée 
     private $connection;
 

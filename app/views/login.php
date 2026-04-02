@@ -54,7 +54,7 @@
                     <div class="auth-card shadow-sm">
                         <h2 class="fw-bold mb-4 text-center">Connexion</h2>
 
-                        <form action="#" method="POST">
+                        <form action="index.php?url=login" method="POST">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Adresse e-mail</label>
                                 <input type="email" class="form-control auth-input" id="email" name="email" placeholder="exemple@email.com">

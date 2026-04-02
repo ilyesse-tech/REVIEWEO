@@ -57,8 +57,8 @@
 
                         <form action="#" method="POST">
                             <div class="mb-3">
-                                <label for="name" class="form-label">Nom complet</label>
-                                <input type="text" class="form-control auth-input" id="name" name="name" placeholder="Votre nom complet">
+                                <label for="pseudo" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control auth-input" id="name" name="pseudo" placeholder="Votre nom complet">
                             </div>
 
                             <div class="mb-3">
@@ -69,11 +69,6 @@
                             <div class="mb-3">
                                 <label for="password" class="form-label">Mot de passe</label>
                                 <input type="password" class="form-control auth-input" id="password" name="password" placeholder="Créer un mot de passe">
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="confirmPassword" class="form-label">Confirmer le mot de passe</label>
-                                <input type="password" class="form-control auth-input" id="confirmPassword" name="confirmPassword" placeholder="Confirmez le mot de passe">
                             </div>
 
                             <button type="submit" class="btn btn-dark w-100 py-2">Créer mon compte</button>

@@ -13,7 +13,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.php">📚 REVIEWEO</a>
+            <a class="navbar-brand fw-bold" href="index.php"> REVIEWEO</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRevieweo">
                 <span class="navbar-toggler-icon"></span>
@@ -117,85 +117,99 @@
                             </div>
                             <p class="mb-3">Très beau livre, simple à lire mais vraiment profond.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>12</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                    <!-- on met une icon -->
+                                </button>
                                  </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="mb-0">Karim</h5>
-                                <span class="badge bg-warning text-dark">4/5</span>
+                               <!-- on affiche la note  -->
                             </div>
                             <p class="mb-3">Le style est particulier, mais le message est fort.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>7</span></button>
-                            
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                    <!-- on met une icon --></button>
                             </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="mb-0">Amina</h5>
-                                <span class="badge bg-primary">5/5</span>
+                                <!-- on affiche la note  -->
                             </div>
                             <p class="mb-3">Une œuvre marquante qui fait réfléchir.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>15</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                    <!-- on met une icon -->
+                                </button>
                              </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="mb-0">Lucas</h5>
-                                <span class="badge bg-danger">3/5</span>
+                                 <!-- on affiche la note  -->
                             </div>
                             <p class="mb-3">Intéressant, mais j’ai eu du mal avec le personnage principal.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>4</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                     <!-- on met une icon -->
+                                </button>
                             </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="mb-0">Nadia</h5>
-                                <span class="badge bg-success">4/5</span>
+                                 <!-- on affiche la note  -->
                             </div>
                             <p class="mb-3">Lecture courte, efficace et très bien écrite.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>9</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                     <!-- on met une icon -->
+                                </button>
                             </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="mb-0">Yassine</h5>
-                                <span class="badge bg-primary">5/5</span>
+                                 <!-- on affiche la note  -->
                             </div>
                             <p class="mb-3">Un classique à lire absolument.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>11</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                     <!-- on met une icon -->
+                                </button>
                             </div>
                         </div>
 
                         <div class="comment-item border-bottom pb-3 mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="mb-0">Mélissa</h5>
-                                <span class="badge bg-warning text-dark">4/5</span>
+                                 <!-- on affiche la note  -->
                             </div>
                             <p class="mb-3">J’ai aimé la réflexion philosophique derrière l’histoire.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>6</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                     <!-- on met une icon -->
+                                </button>
                             </div>
                         </div>
 
                         <div class="comment-item">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="mb-0">Imane</h5>
-                                <span class="badge bg-success">5/5</span>
+                                 <!-- on affiche la note  -->
                             </div>
                             <p class="mb-3">Très belle découverte, lecture rapide mais impactante.</p>
                             <div class="reaction-group d-flex gap-2 flex-wrap">
-                                <button class="btn btn-outline-secondary btn-sm reaction-btn">👍 <span>13</span></button>
+                                <button class="btn btn-outline-secondary btn-sm reaction-btn">
+                                     <!-- on met une icon -->
+                                </button>
 
                             </div>
                         </div>

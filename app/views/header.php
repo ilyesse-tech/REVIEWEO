@@ -33,13 +33,20 @@
 
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Toutes les critiques</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.php?url=home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?url=critiques">Toutes les critiques</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
                 </ul>
+
                 <div class="d-flex align-items-center gap-3">
-                    <a href="login.php" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
-                    <a href="register.php" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
+                    <?php if (isset($_SESSION['user'])): ?>
+                        <span class="text-white">Bonjour <?= htmlspecialchars($_SESSION['user']['pseudo']); ?></span>
+                        <a href="index.php?url=profile" class="btn btn-outline-light btn-sm px-4 rounded-pill">Mon profil</a>
+                        <a href="index.php?url=logout" class="btn btn-danger btn-sm px-4 rounded-pill">Déconnexion</a>
+                    <?php else: ?>
+                        <a href="index.php?url=login" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
+                        <a href="index.php?url=register" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
