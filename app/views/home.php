@@ -9,7 +9,7 @@
 <body>
     <section class="container py-5" id="voir">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="fw-bold">📚 Dernières pépites</h2>
+        <h2 class="fw-bold"> Dernières pépites</h2>
         <div class="dropdown">
             <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                 Trier par

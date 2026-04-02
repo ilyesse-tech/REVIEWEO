@@ -65,17 +65,6 @@
                                 <input type="password" class="form-control auth-input" id="password" name="password" placeholder="Votre mot de passe">
                             </div>
 
-                            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="remember">
-                                    <label class="form-check-label" for="remember">
-                                        Se souvenir de moi
-                                    </label>
-                                </div>
-
-                                <a href="#" class="small text-decoration-none">Mot de passe oublié ?</a>
-                            </div>
-
                             <button type="submit" class="btn btn-dark w-100 py-2">Se connecter</button>
                         </form>
 

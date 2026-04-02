@@ -38,8 +38,8 @@
                     <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
                 </ul>
                 <div class="d-flex align-items-center gap-3">
-                    <a href="#" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
-                    <a href="#" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
+                    <a href="login.php" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
+                    <a href="register.php" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
                 </div>
             </div>
         </div>
@@ -53,12 +53,6 @@
                     <h2 class="display-5 fw-light mb-5 text-uppercase tracking-widest">Sur notre site de lectures</h2>
                     
                     <div class="d-flex justify-content-center justify-content-md gap-3">
-                        <a href="#voir" class="btn btn-primary btn-lg px-4 shadow">
-                            <i class="bi bi-eye me-2"></i>Voir les livres
-                        </a>
-                        <a href="#critique" class="btn btn-success btn-lg px-4 shadow">
-                            <i class="bi bi-plus-circle me-2"></i>Ajouter une critique
-                        </a>
                     </div>
                 </div>
             </div>
