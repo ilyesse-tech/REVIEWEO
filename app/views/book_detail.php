@@ -73,8 +73,14 @@
     </section>
 
     <section class = "ToutLesCommentaires">
-        <?php
-        
-        ?>
+        <?php foreach($critiques as $critique): ?>  //critiques est un fetchAll de tout les livres
+
+            <div>
+                <h3><?= htmlspecialchars($critique['titre']) ?></h3>
+                <p><?= htmlspecialchars($critique['contenu']) ?></p>
+                <span>Note : <?= $critique['note'] ?></span>
+            </div>
+
+        <?php endforeach; ?>
     </section>
 </body>

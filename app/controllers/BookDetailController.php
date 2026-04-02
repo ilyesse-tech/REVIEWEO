@@ -24,7 +24,7 @@
                 $titre = $_POST['titre'] ;
                 $contenu = $_POST['contenu'] ;
                 $note = $_POST['note'] ;
-                $id_livre = $_GET['id_livre'] ;  //WARNING PAS ENCORE FAIT
+                $id_livre = 1;  //WARNING PAS ENCORE FAIT
 
                 // je recup l'utilisateur connecté
                 $id_user = $_SESSION['user']['id']; // on rapelle que si le mec est ici cest quil est log et que donc il a suivit le process
@@ -41,6 +41,14 @@
             }
             
             require_once __DIR__ . '/../views/book_detail.php';
+        }
+
+        public function afficherCritiqueByLivre(){
+
+            $id_livre = $_GET['id'] ; //recup lid pour chercher tout els comm par  rapport a cette id
+
+            $critiques = $this->connection->getCritiquesByLivre($id_livre);
+
         }
         
     }
