@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-class book_detail
+class bookDetailModel
 {
     //on donne accès a la base de donnée 
     private $connection;

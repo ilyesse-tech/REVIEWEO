@@ -10,7 +10,7 @@ class  UserModel{
         $this-> connection = $db_connection;
     }
 
-    //cette focntion renvoie true car execute() renvoie true ou false si sa reussti ou non
+    //cette fonction renvoie true car execute() renvoie true ou false si sa reussti ou non
     public function register(string $pseudo, string $email, string $password,):bool{
         $requestSQL= "INSERT INTO user(pseudo, email, password )
         VALUES (:pseudo, :email, :password )

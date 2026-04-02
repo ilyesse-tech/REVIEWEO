@@ -34,7 +34,9 @@ switch ($url) {
     case 'book_detail':
         $controller = new BookDetailController($db_connection);
         $controller->checkIsConnected();
-        $controller->afficherPage();
+
+        
+
         break;
 
     case 'logout':

@@ -34,9 +34,6 @@
                 </div>
 
                 <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
-                    <button class="btn btn-outline-danger btn-sm rounded-pill">
-                        <i class="bi bi-heart-fill"></i> 124
-                    </button>
                     <a href="index.php?url=book_detail" class="btn btn-dark btn-sm px-3">Lire la suite</a>
                 </div>
             </div>
@@ -59,9 +56,6 @@
                 </div>
 
                 <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
-                    <button class="btn btn-outline-danger btn-sm rounded-pill">
-                        <i class="bi bi-heart-fill"></i> 124
-                    </button>
                     <a href="index.php?url=book_detail" class="btn btn-dark btn-sm px-3">Lire la suite</a>
                 </div>
             </div>
@@ -83,9 +77,6 @@
                 </div>
 
                 <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
-                    <button class="btn btn-outline-danger btn-sm rounded-pill">
-                        <i class="bi bi-heart-fill"></i> 124
-                    </button>
                     <a href="index.php?url=book_detail" class="btn btn-dark btn-sm px-3">Lire la suite</a>
                 </div>
             </div>
