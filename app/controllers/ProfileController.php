@@ -57,4 +57,6 @@ class ProfileController {
 
         require_once __DIR__ . '/../views/edit_critique.php';
     }
+
+    
 }

@@ -1,7 +1,3 @@
-<h2>Mon Profil</h2>
-<p>Bienvenue, <?php echo htmlspecialchars($_SESSION['user']['pseudo']); ?> !</p>
-
-<h3>Mes critiques postées</h3>
 <table class="table">
     <thead>
         <tr>
@@ -12,15 +8,24 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($myCritiques as $c): ?>
-        <tr>
-            <td><?php echo htmlspecialchars($c['titre']); ?></td>
-            <td><?php echo $c['note']; ?>/5</td>
-            <td><?php echo $c['date_creation']; ?></td>
-            <td>
-                <a href="index.php?url=editCritique&id=<?php echo $c['id']; ?>" class="btn btn-sm btn-primary">Modifier</a>
-            </td>
-        </tr>
-        <?php endforeach; ?>
+        <?php if (empty($myCritiques)): ?>
+            <tr>
+                <td colspan="4" class="text-center text-muted">
+                    Vous n'avez pas encore posté de critique. 
+                    <a href="index.php?url=home">Parcourir les livres</a>
+                </td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($myCritiques as $c): ?>
+            <tr>
+                <td><?= htmlspecialchars($c['titre']) ?></td>
+                <td><?= $c['note'] ?>/5</td>
+                <td><?= $c['date_creation'] ?></td>
+                <td>
+                    <a href="index.php?url=editCritique&id=<?= $c['id'] ?>" class="btn btn-sm btn-primary">Modifier</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </tbody>
 </table>

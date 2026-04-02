@@ -8,6 +8,8 @@ require_once __DIR__ . '/../app/controllers/HomeController.php';
 require_once __DIR__ . '/../app/controllers/BookDetailController.php';
 require_once __DIR__ . '/../app/controllers/ProfileController.php';
 
+
+
 use app\controllers\BookDetailController;
 use app\controllers\HomeController;
 use app\controllers\UserController;
@@ -34,8 +36,8 @@ switch ($url) {
 
     case 'book_detail':
         $controller = new BookDetailController($db_connection);
-        $controller->checkIsConnected();
-        $controller->afficherPage();
+        // On appelle une seule méthode qui fait le job
+        $controller->afficherPage(); 
         break;
 
     case 'logout':
@@ -57,6 +59,12 @@ switch ($url) {
     case 'profile':
         $controller = new \app\controllers\ProfileController($db_connection);
         $controller->index();
+        break;
+
+    case 'editCritique':
+        require_once __DIR__ . '/../app/controllers/ProfileController.php';
+        $controller = new \app\controllers\ProfileController($db_connection);
+        $controller->editCritique();
         break;
    
 }
