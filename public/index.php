@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+require_once __DIR__ . '/../app/controllers/AdminController.php'; // AJOUTE CETTE LIGNE
 require_once __DIR__ . '/../config/Db.php';
 require_once __DIR__ . '/../app/controllers/UserController.php';
 require_once __DIR__ . '/../app/controllers/HomeController.php';
@@ -42,5 +42,14 @@ switch ($url) {
         $controller->deconnexion();
         break;
 
+    case 'admin':
+       $controller = new \app\controllers\AdminController($db_connection);
+       $controller->index();
+       break;
+
+    case 'deleteCritique':
+       $controller = new \app\controllers\AdminController($db_connection);
+       $controller->deleteCritique();
+       break;
    
 }

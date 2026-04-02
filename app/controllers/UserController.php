@@ -51,23 +51,33 @@
                 $email = $_POST['email'];
                 $password = $_POST['password'];
 
-                // on demande a la base de donnée de recup tout lutilisateur grace a son mail
                 $user = $this->userModel->findByEmail($email);
-                
-                // si l'utilisateur n'existe pas dans la base de donnée ou son password est faux alors on fait sa
+        
                 if(!$user || !password_verify($password, $user['password'] )){
                     echo "Mail ou mot de passe incorrecte ";
                     return;
                 }
-                
+        
+                if (session_status() === PHP_SESSION_NONE) {
                 session_start();
-                $_SESSION['user']= $user;
-                header("Location: index.php?url=home");
+                }
+
+        // On stocke l'utilisateur en session
+                $_SESSION['user'] = $user;
+
+        // --- L'AIGUILLAGE SELON LE RÔLE ---
+                if (isset($user['role']) && $user['role'] === 'admin') {
+            // Si c'est l'admin, on l'envoie vers l'action admin
+                    header("Location: index.php?url=admin");
+                } else {
+            // Sinon, on l'envoie vers l'accueil
+                    header("Location: index.php?url=home");
+                }
                 exit;
             }
+            
             require __DIR__ . '/../views/login.php';
         }
-
         public function deconnexion(){
             $_SESSION = []; // on le deconnecte en supprimant les donner de sa session
             session_destroy(); // on la delete ensuite compltemetn pour plus de securiter 
