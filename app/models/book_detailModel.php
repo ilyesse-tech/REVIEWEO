@@ -68,4 +68,13 @@ class book_detail
 
         return $result[0];
     }
+
+//     // public function updateTitle($id, $newTitle) {
+//     // $sql = "UPDATE books SET title = :title WHERE id = :id";
+//     // $statement = $this->connection->prepare($sql);
+//     // return $statement->execute([
+//     //     ':title' => $newTitle,
+//     //     ':id' => $id
+//     // ]);
+// }
 }

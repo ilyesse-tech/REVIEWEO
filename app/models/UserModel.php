@@ -7,7 +7,7 @@ use PDO;
 class  UserModel{
     //on donne accès a la base de donnée 
     private $connection;
-    private $db;
+    
     
 
     public function __construct($db_connection){
@@ -42,8 +42,8 @@ class  UserModel{
 
     public function countAll() {
         $sql = "SELECT COUNT(*) as total FROM user";
-        $query = $this->db->query($sql);
-        $result = $query->fetch (PDO::FETCH_ASSOC);
+        $query = $this->connection->query($sql);
+        $result = $query->fetch(PDO::FETCH_ASSOC);
 
         return (int) $result['total'];
     }

@@ -1,66 +1,81 @@
 <?php 
+    
 namespace app\controllers;
 
 require_once __DIR__ . '/../models/UserModel.php'; 
+use app\models\UserModel;
+
 require_once __DIR__ . '/../models/book_detailModel.php';
 
-use app\models\UserModel;
-use app\models\BookDetailModel; // Vérifie que c'est bien le nom de la classe dans ton modèle
-
 class AdminController {
+    // 1. On déclare une propriété pour stocker la connexion
+    private $db;
 
-    // Affiche le Dashboard
-    public function index() {
-        $this->checkSecurity();
-
-        $userModel = new UserModel();
-        $totalUsers = $userModel->countAll();
-
-        // On peut aussi récupérer le total des livres ici
-        // $bookModel = new BookDetailModel();
-        // $totalBooks = $bookModel->countAll();
-
-        require_once __DIR__ . '/../views/adminDash.php';
+    // 2. LE CONSTRUCTEUR : Il reçoit $db_connection de ton index.php
+    public function __construct($db_connection) {
+        $this->db = $db_connection;
     }
 
-    // SUPPRIMER UNE CRITIQUE (ou un utilisateur)
-    public function deleteUser() {
-        $this->checkSecurity();
-
-        if (isset($_GET['id'])) {
-            $id = $_GET['id'];
-            $userModel = new UserModel();
-            $userModel->delete($id); // Tu devras créer cette fonction dans UserModel
-        }
-
-        header('Location: index.php?action=admin');
+ public function index() {
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+    
+    if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
+        header('location: index.php?action=login');
         exit();
     }
 
-    // MODIFIER LE NOM D'UN LIVRE
-    public function editBookName() {
-        $this->checkSecurity();
+    // 1. Gestion des Utilisateurs
+    $userModel = new UserModel($this->db);
+    $totalUsers = $userModel->countAll();
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $id = $_POST['book_id'];
-            $newName = $_POST['new_name'];
+    // 2. NOUVEAU : Gestion des Critiques (Reviews)
+    // On crée le modèle et on récupère la liste
+    $reviewModel = new \app\models\ReviewModel($this->db);
+    $allReviews = $reviewModel->findAll(); 
 
-            $bookModel = new BookDetailModel();
-            $bookModel->updateName($id, $newName); // Tu devras créer cette fonction dans BookDetailModel
-        }
+    // 3. Appel de la vue (maintenant elle a accès à $totalUsers ET $allReviews)
+    require_once __DIR__ . '/../views/adminDash.php';
+}
 
-        header('Location: index.php?action=admin');
+    // Action pour supprimer une critique
+public function deleteReview() {
+    $this->checkAdmin(); // On vérifie la sécurité
+
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+        // On imagine que tu as un ReviewModel
+        $reviewModel = new \app\models\ReviewModel($this->db);
+        $reviewModel->delete($id);
+    }
+
+    header('Location: index.php?action=admin&status=deleted');
+    exit();
+}
+
+// Action pour modifier le titre d'un livre
+// public function updateBook() {
+//     $this->checkAdmin();
+
+//     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//         $id = $_POST['book_id'];
+//         $newName = $_POST['new_title'];
+
+//         $bookModel = new \app\models\book_detailModel($this->db);
+//         $bookModel->updateTitle($id, $newName);
+//     }
+
+//     header('Location: index.php?action=admin&status=updated');
+//     exit();
+// }
+
+// Petite fonction pour éviter de répéter le test admin
+private function checkAdmin() {
+    if (session_status() === PHP_SESSION_NONE) session_start();
+    if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
+        header('Location: index.php?action=login');
         exit();
     }
-
-    // Petite fonction privée pour éviter de répéter le code de sécurité
-    private function checkSecurity() {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-        if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
-            header('location: index.php?action=login');
-            exit();
-        }
-    }
+}
 }

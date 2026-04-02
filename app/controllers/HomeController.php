@@ -12,7 +12,7 @@
                 header("Location: index.php?url=login");
                 exit;
             }
-        require_once __DIR__ . '/../app/views/book_detail.php';
+        require_once __DIR__ . '/../views/book_detail.php';
         }
     }
 

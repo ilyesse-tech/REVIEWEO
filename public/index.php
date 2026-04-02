@@ -37,4 +37,9 @@ switch ($url) {
 
     case 'logout':
         $controller = new book_detail($db_connection);
+
+    case 'deleteReview':
+    $controller = new \app\controllers\AdminController($db_connection);
+    $controller->deleteReview();
+    break;
 }

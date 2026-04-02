@@ -1,15 +1,15 @@
-<?php echo $totalUsers; ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style_admin.css">
-</head>
-<?php include 'header.php'; ?>
-<body>
-    
-</body>
-</html>
+<tbody>
+    <?php if (!empty($allReviews)): ?>
+        <?php foreach ($allReviews as $review): ?>
+            <tr>
+                <td><?php echo $review['id']; ?></td>
+                <td><?php echo htmlspecialchars($review['comment']); ?></td>
+                <td><a href="index.php?action=deleteReview&id=<?php echo $review['id']; ?>">Supprimer</a></td>
+            </tr>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <tr><td colspan="3">Aucune critique à afficher.</td></tr>
+    <?php endif; ?>
+</tbody>
+    </table>
+</section>
