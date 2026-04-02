@@ -6,6 +6,7 @@ require_once __DIR__ . '/../config/Db.php';
 require_once __DIR__ . '/../app/controllers/UserController.php';
 require_once __DIR__ . '/../app/controllers/HomeController.php';
 require_once __DIR__ . '/../app/controllers/BookDetailController.php';
+require_once __DIR__ . '/../app/controllers/ProfileController.php';
 
 use app\controllers\BookDetailController;
 use app\controllers\HomeController;
@@ -51,5 +52,11 @@ switch ($url) {
        $controller = new \app\controllers\AdminController($db_connection);
        $controller->deleteCritique();
        break;
+
+       // Dans ton switch ($url)
+    case 'profile':
+        $controller = new \app\controllers\ProfileController($db_connection);
+        $controller->index();
+        break;
    
 }

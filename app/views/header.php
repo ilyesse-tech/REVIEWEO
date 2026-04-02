@@ -41,11 +41,15 @@
                 <div class="d-flex align-items-center gap-3">
                     <?php if (isset($_SESSION['user'])): ?>
                         <span class="text-white">Bonjour <?= htmlspecialchars($_SESSION['user']['pseudo']); ?></span>
-                        <a href="index.php?url=profile" class="btn btn-outline-light btn-sm px-4 rounded-pill">Mon profil</a>
-                        <a href="index.php?url=logout" class="btn btn-danger btn-sm px-4 rounded-pill">Déconnexion</a>
+                        <?php if ($_SESSION['user']['role'] === 'admin'): ?>
+                            <a href="index.php?url=admin" class="btn btn-outline-light btn-sm px-4 rounded-pill fw-bold">
+                                <i class="bi me-1"></i> Admin </a>
+                        <?php endif; ?>
+                            <a href="index.php?url=profile" class="btn btn-outline-light btn-sm px-4 rounded-pill">Mon profil</a>
+                            <a href="index.php?url=logout" class="btn btn-danger btn-sm px-4 rounded-pill">Déconnexion</a>
                     <?php else: ?>
-                        <a href="index.php?url=login" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
-                        <a href="index.php?url=register" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
+                            <a href="index.php?url=login" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
+                            <a href="index.php?url=register" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
                     <?php endif; ?>
                 </div>
             </div>
