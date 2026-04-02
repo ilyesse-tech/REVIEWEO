@@ -3,48 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revieweo - Critiques de Livres</title>
+    <title>Revieweo - Vos critiques de livres</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     
-    <link rel="stylesheet" href="/public/asset/css/style.css">
+    <style>
+        /* Un petit style perso pour un dégradé élégant */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
+        }
+    </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="/">
-            <i class="bi bi-book-half me-2"></i>Revieweo
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Parcourir</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="/">
+                <i class="bi bi-book-half text-primary me-2"></i>REVIEWEO
+            </a>
             
-            <form class="d-flex me-3">
-                <input class="form-control form-control-sm me-2" type="search" placeholder="Chercher un livre...">
-            </form>
-            
-            <div class="navbar-nav">
-                <a class="nav-link btn btn-outline-primary btn-sm text-white px3" href="#">Critiques</a>
-                <a class="nav-link btn btn-outline-primary btn-sm text-white px-3" href="#">Connexion</a>
-                <a class="nav-link btn btn-outline-primary btn-sm text-white px-3" href="#">Incription</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Toutes les critiques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
+                    <a href="#" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-<header class=">
+    </nav>
 
-</header>
+    <header class="hero-section d-flex align-items-center text-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-1 fw-bold mb-3">BIENVENUE À VOUS</h1>
+                    <h2 class="display-5 fw-light mb-5 text-uppercase tracking-widest">Sur notre site de lectures</h2>
+                    
+                    <div class="d-flex justify-content-center justify-content-md gap-3">
+                        <a href="#voir" class="btn btn-primary btn-lg px-4 shadow">
+                            <i class="bi bi-eye me-2"></i>Voir les livres
+                        </a>
+                        <a href="#critique" class="btn btn-success btn-lg px-4 shadow">
+                            <i class="bi bi-plus-circle me-2"></i>Ajouter une critique
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
