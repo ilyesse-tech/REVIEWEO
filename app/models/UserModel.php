@@ -2,9 +2,13 @@
 
 namespace app\models;
 
+use PDO;
+
 class  UserModel{
     //on donne accès a la base de donnée 
     private $connection;
+    private $db;
+    
 
     public function __construct($db_connection){
         $this-> connection = $db_connection;
@@ -35,5 +39,13 @@ class  UserModel{
 
         return $statement->fetch(); // on recup les données envoyer par notre db
     }
+
+    public function countAll() {
+        $sql = "SELECT COUNT(*) as total FROM user";
+        $query = $this->db->query($sql);
+        $result = $query->fetch (PDO::FETCH_ASSOC);
+
+        return (int) $result['total'];
+    }
 }
-?>
+
