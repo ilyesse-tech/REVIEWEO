@@ -1,12 +1,5 @@
 <?php include 'header.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
     <section class="container py-5" id="voir">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="fw-bold"> Dernières pépites</h2>
@@ -97,10 +90,7 @@
                 </div>
             </div>
         </div>
-        </div>
-        
-</section>
-    
+    </div>
 </body>
 <?php include 'footer.php'; ?>
 
