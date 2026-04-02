@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-class CritiqueModel
+class book_detail
 {
     //on donne accès a la base de donnée 
     private $connection;
@@ -41,12 +41,12 @@ class CritiqueModel
 
         $sql = "SELECT * FROM critique WHERE id_livre = :id";
         
-        $stmt = $this->connection->prepare($sql);
-        $stmt->execute([
+        $statement = $this->connection->prepare($sql);
+        $statement->execute([
             ':id' => $id_livre
         ]);
 
-        return $stmt->fetchAll(); // tableau de toute les critiques du livre avec l'id  qu'on va recup depuis une url avec un get
+        return $statement->fetchAll(); // tableau de toute les critiques du livre avec l'id  qu'on va recup depuis une url avec un get
     }
 
 

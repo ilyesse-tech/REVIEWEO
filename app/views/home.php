@@ -44,7 +44,7 @@
                     <button class="btn btn-outline-danger btn-sm rounded-pill">
                         <i class="bi bi-heart-fill"></i> 124
                     </button>
-                    <a href="#" class="btn btn-dark btn-sm px-3">Lire la suite</a>
+                    <a href="index.php?url=book_detail" class="btn btn-dark btn-sm px-3">Lire la suite</a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
                     <button class="btn btn-outline-danger btn-sm rounded-pill">
                         <i class="bi bi-heart-fill"></i> 124
                     </button>
-                    <a href="#" class="btn btn-dark btn-sm px-3">Lire la suite</a>
+                    <a href="index.php?url=book_detail" class="btn btn-dark btn-sm px-3">Lire la suite</a>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                     <button class="btn btn-outline-danger btn-sm rounded-pill">
                         <i class="bi bi-heart-fill"></i> 124
                     </button>
-                    <a href="#" class="btn btn-dark btn-sm px-3">Lire la suite</a>
+                    <a href="index.php?url=book_detail" class="btn btn-dark btn-sm px-3">Lire la suite</a>
                 </div>
             </div>
         </div>

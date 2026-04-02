@@ -3,6 +3,7 @@
 session_start();
 
 require_once __DIR__ . '/../config/Db.php';
+use app\controllers\book_detail;
 use app\controllers\HomeController;
 use app\controllers\UserController;
 
@@ -16,6 +17,7 @@ switch ($url) {
     case 'home':
         $controller = new HomeController();
         $controller->index();
+        $controller->checkIsConnected();
         break;
 
     case 'login':
@@ -32,4 +34,7 @@ switch ($url) {
         $controller = new UserController($db_connection);
         $controller->deconnexion();
         break;
+
+    case 'logout':
+        $controller = new book_detail($db_connection);
 }
