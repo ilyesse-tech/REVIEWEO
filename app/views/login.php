@@ -11,7 +11,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.php">📚 REVIEWEO</a>
+            <a class="navbar-brand fw-bold" href="index.php"> REVIEWEO</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRevieweo">
                 <span class="navbar-toggler-icon"></span>

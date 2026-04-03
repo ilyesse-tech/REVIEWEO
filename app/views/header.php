@@ -41,7 +41,7 @@
                 <div class="d-flex align-items-center gap-3">
                     <?php if (isset($_SESSION['user'])): ?>
                         <span class="text-white">Bonjour <?= htmlspecialchars($_SESSION['user']['pseudo']); ?></span>
-                        <?php if ($_SESSION['user']['role'] === 'admin'): ?>
+                        <?php if ($_SESSION['user']['role'] === '2'): ?>
                             <a href="index.php?url=admin" class="btn btn-outline-light btn-sm px-4 rounded-pill fw-bold">
                                 <i class="bi me-1"></i> Admin </a>
                         <?php endif; ?>

@@ -15,7 +15,7 @@ class AdminController {
 
     private function checkAdmin() {
         if (session_status() === PHP_SESSION_NONE) session_start();
-        if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !=='0') {
+        if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !=='2') {
             header('Location: index.php?url=login');
             exit();
         }
