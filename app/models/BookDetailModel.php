@@ -26,27 +26,28 @@ class bookDetailModel
         ]);
     }
 
-    public function addLike(int $id_user, int $id_livre): bool{
-        $requestSQL = "INSERT INTO like_critique(int $id_user, int $id_livre)
-        VALUES (:id_user, :id_livre )
-        ";
+    public function addLike(int $id_user, int $id_livre): bool {
+    // Suppression des "int" à l'intérieur de la requête SQL
+        $requestSQL = "INSERT INTO like_critique(id_user, id_livre) 
+                   VALUES (:id_user, :id_livre)";
+    
         $statement = $this->connection->prepare($requestSQL);
-        return $statement->execute([  //la fonction register retournera donc true ou false au controller  
+        return $statement->execute([
             ':id_user' => $id_user,
-            ':id_livre' => $id_livre,
-        ]);
+            ':id_livre' => $id_livre,]);
     }
 
-    public function getCritiquesByLivre(int $id_livre): array{
-
-        $sql = "SELECT * FROM critique WHERE id_livre = :id";
-        
+    public function getCritiquesByLivre(int $id_livre): array {
+    // On va chercher le pseudo de l'auteur en même temps
+        $sql = "SELECT c.*, u.pseudo 
+            FROM critique c
+            JOIN user u ON c.id_user = u.id
+            WHERE c.id_livre = :id";
+    
         $statement = $this->connection->prepare($sql);
-        $statement->execute([
-            ':id' => $id_livre
-        ]);
+        $statement->execute([':id' => $id_livre]);
 
-        return $statement->fetchAll(); // tableau de toute les critiques du livre avec l'id  qu'on va recup depuis une url avec un get
+        return $statement->fetchAll(\PDO::FETCH_ASSOC); 
     }
 
 

@@ -33,7 +33,7 @@ class  UserModel{
             'email' => $email
         ]);
 
-        return $statement->fetch(); // on recup les données envoyer par notre db
+        return $statement->fetch(\PDO::FETCH_ASSOC); // on recup les données envoyer par notre db
     }
 }
 ?>

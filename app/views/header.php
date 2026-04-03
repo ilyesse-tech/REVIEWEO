@@ -19,51 +19,55 @@
         }
     </style>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-    <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="/">
-            <i class="bi bi-book-half text-primary me-2"></i>REVIEWEO
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="index.php?url=home">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?url=critiques">Toutes les critiques</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
-            </ul>
+<body>
 
-            <div class="d-flex align-items-center gap-3">
-                <?php if (isset($_SESSION['user'])): ?>
-                    <span class="text-white">Bonjour <?= htmlspecialchars($_SESSION['user']['pseudo']); ?></span>
-                    <a href="index.php?url=profile" class="btn btn-outline-light btn-sm px-4 rounded-pill">Mon profil</a>
-                    <a href="index.php?url=logout" class="btn btn-danger btn-sm px-4 rounded-pill">Déconnexion</a>
-                <?php else: ?>
-                    <a href="index.php?url=login" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
-                    <a href="index.php?url=register" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="/">
+                <i class="bi bi-book-half text-primary me-2"></i>REVIEWEO
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.php?url=home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
+                </ul>
 
-<header class="hero-section d-flex align-items-center text-white">
-    <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <h1 class="display-1 fw-bold mb-3">BIENVENUE À VOUS</h1>
-                <h2 class="display-5 fw-light mb-5 text-uppercase tracking-widest">Sur notre site de lectures</h2>
-                
-                <div class="d-flex justify-content-center justify-content-md gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <?php if (isset($_SESSION['user'])): ?>
+                        <span class="text-white">Bonjour <?= htmlspecialchars($_SESSION['user']['pseudo']); ?></span>
+                        <?php if ($_SESSION['user']['role'] === 'admin'): ?>
+                            <a href="index.php?url=admin" class="btn btn-outline-light btn-sm px-4 rounded-pill fw-bold">
+                                <i class="bi me-1"></i> Admin </a>
+                        <?php endif; ?>
+                            <a href="index.php?url=profile" class="btn btn-outline-light btn-sm px-4 rounded-pill">Mon profil</a>
+                            <a href="index.php?url=logout" class="btn btn-danger btn-sm px-4 rounded-pill">Déconnexion</a>
+                    <?php else: ?>
+                            <a href="index.php?url=login" class="btn btn-outline-light btn-sm px-4 rounded-pill">Connexion</a>
+                            <a href="index.php?url=register" class="btn btn-outline-light btn-sm px-4 rounded-pill">Inscription</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </nav>
 
-<body>
+    <header class="hero-section d-flex align-items-center text-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-1 fw-bold mb-3">BIENVENUE À VOUS</h1>
+                    <h2 class="display-5 fw-light mb-5 text-uppercase tracking-widest">Sur notre site de lectures</h2>
+                    
+                    <div class="d-flex justify-content-center justify-content-md gap-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <main class="container py-5">
