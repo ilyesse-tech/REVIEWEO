@@ -23,7 +23,7 @@ class  UserModel{
         ]);
     }
 
-    public function findByEmail(string $email) {
+    public function findUserByEmail(string $email) { // sa va servir pour login ou autre fonctionnalité.
 
         $requeteSQL = "SELECT * FROM user WHERE email = :email";
 

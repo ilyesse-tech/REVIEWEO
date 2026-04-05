@@ -20,7 +20,7 @@
                 $email = $_POST['email'];
                 $password = $_POST['password'];
 
-                $accountAreadyExist = $this->userModel->findByEmail($email);
+                $accountAreadyExist = $this->userModel->findUserByEmail($email);
 
                 if($accountAreadyExist){
                     echo "Se compte existe déjà.";
@@ -51,7 +51,7 @@
                 $email = $_POST['email'];
                 $password = $_POST['password'];
 
-                $user = $this->userModel->findByEmail($email);
+                $user = $this->userModel->findUserByEmail($email);
         
                 if(!$user || !password_verify($password, $user['password'] )){
                     echo "Mail ou mot de passe incorrecte ";
