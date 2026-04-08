@@ -14,9 +14,9 @@
 <body>
     <header>
         <!-- ajoute de navbar-dark uniquement ICI dans le but de mettre le boutton en blanc -->
-        <nav class="navbar navbar-expand-lg  navbar-dark justify-content-between fs-4 pe-4">
+        <nav class="navbar navbar-expand-lg  navbar-dark justify-content-between fs-2 pe-4">
             <!-- logo -->
-            <a href="#" class="navbar-brand">
+            <a href="#">
                 <img src="/REVIEWEO/public/assets/images/Logo.png" alt="Logo" class="logo img-fluid">
             </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ItemToBeCollapse">
@@ -26,7 +26,7 @@
                 
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="">Catalogue</a>
+                        <a class="nav-link text-white" href="catalogue.php">Catalogue</a>
                     </li>
                 </ul>
             
@@ -34,16 +34,17 @@
                     <li class="nav-item dropdown"> <!-- dropdown pour menu deroulant  -->
                         <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="">A propos</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">A propos de moi</a></li>
-                            <li><a class="dropdown-item" href="#">A propos du site</a></li>
-                            <li><a class="dropdown-item" href="#">Me contacter</a></li>
+                            <!-- idée : les trois seront dans la meme page avec des ancres, -->
+                            <li><a class="dropdown-item" href="A-propos.php">A propos de moi</a></li>
+                            <li><a class="dropdown-item" href="A-propos.php">A propos du site</a></li>
+                            <li><a class="dropdown-item" href="A-propos.php">Me contacter</a></li>
                         </ul>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="">Login</a>
+                        <a class="nav-link text-white" href="login.php">Login</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="">Register</a>
+                        <a class="nav-link text-white" href="register.php">Register</a>
                     </li>
                     
                 </ul>
