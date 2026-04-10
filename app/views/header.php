@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
      
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/REVIEWEO/public/assets/css/header.css">
+    <link rel="stylesheet" href="/REVIEWEO/public/assets/css/home_main.css">
 </head>
 
 <body>
@@ -16,17 +17,17 @@
         <!-- ajoute de navbar-dark uniquement ICI dans le but de mettre le boutton en blanc -->
         <nav class="navbar navbar-expand-lg  navbar-dark justify-content-between fs-2 pe-4">
             <!-- logo -->
-            <a href="#">
+            <a href="index.php?url=home">
                 <img src="/REVIEWEO/public/assets/images/Logo.png" alt="Logo" class="logo img-fluid">
             </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ItemToBeCollapse">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ItemToBeCollapse" href="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="ItemToBeCollapse"> <!-- la class collapse c'est pour le style display none ou au contraire -->
                 
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="catalogue.php">Catalogue</a>
+                        <a class="nav-link text-white" href="index.php?url=catalogue">Catalogue</a>
                     </li>
                 </ul>
             
@@ -35,16 +36,16 @@
                         <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="">A propos</a>
                         <ul class="dropdown-menu">
                             <!-- idée : les trois seront dans la meme page avec des ancres, -->
-                            <li><a class="dropdown-item" href="A-propos.php">A propos de moi</a></li>
-                            <li><a class="dropdown-item" href="A-propos.php">A propos du site</a></li>
-                            <li><a class="dropdown-item" href="A-propos.php">Me contacter</a></li>
+                            <li><a class="dropdown-item" href="index.php?url=A-propos">A propos de moi</a></li>
+                            <li><a class="dropdown-item" href="index.php?url=A-propos">A propos du site</a></li>
+                            <li><a class="dropdown-item" href="index.php?url=A-propos">Me contacter</a></li>
                         </ul>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="login.php">Login</a>
+                        <a class="nav-link text-white" href="index.php?url=login">Login</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="register.php">Register</a>
+                        <a class="nav-link text-white" href="index.php?url=register">Register</a>
                     </li>
                     
                 </ul>
